@@ -1,0 +1,461 @@
+/* ------------------------------
+   Sections
+-------------------------------- */
+
+/* Hero */
+.hero {
+  background:
+    radial-gradient(900px 500px at 10% 10%, rgba(47, 125, 245, 0.14), transparent 55%),
+    radial-gradient(700px 440px at 90% 20%, rgba(31, 95, 191, 0.10), transparent 60%),
+    linear-gradient(180deg, var(--surface) 0%, #fff 55%);
+  padding-top: 56px;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-media {
+  min-height: 360px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(15, 23, 42, 0.02));
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 900px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media {
+    min-height: 240px;
+  }
+}
+
+/* Services */
+.services {
+  background: #fff;
+}
+
+.service-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+
+}
+
+.service-card {
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-media {
+  height: 160px;
+    background:
+      radial-gradient(420px 220px at 20% 20%, rgba(47, 125, 245, 0.22), transparent 55%),
+      linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(47, 125, 245, 0.10));
+}
+
+.service-body {
+  display: grid;
+  gap: 8px;
+  padding: 16px 16px 18px;
+}
+
+.service-body p {
+  margin: 0;
+  color: var(--muted);
+}
+.service-body h3 {
+  margin: 0;
+}
+
+@media (min-width: 1101px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 560px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Why + Stats */
+.why {
+  background: var(--surface);
+}
+
+.checklist {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: rgba(15, 23, 42, 0.82);
+}
+
+.checklist li {
+  margin: 8px 0;
+}
+
+.stats-card {
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: #fff;
+  box-shadow: var(--shadow-md);
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.stat {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.stat strong {
+  font-size: 26px;
+  letter-spacing: -0.03em;
+}
+
+.stat span {
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+/* Doctors */
+.doctors {
+  background: #fff;
+}
+
+.doctor-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.doctor-card {
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.doctor-photo {
+  height: 220px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(47, 125, 245, 0.1));
+}
+
+.doctor-body {
+  padding: 14px 14px 16px;
+}
+
+.doctor-body p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+@media (max-width: 1100px) {
+  .doctor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Gallery */
+.gallery {
+  background: var(--surface);
+}
+
+.gallery-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.gallery-item {
+  height: 160px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(47, 125, 245, 0.14), rgba(15, 23, 42, 0.04));
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 1100px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Appointment */
+.appointment {
+  background: radial-gradient(700px 440px at 85% 30%, rgba(47, 125, 245, 0.12), transparent 55%), #fff;
+}
+
+.appointment-media {
+  min-height: 520px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(47, 125, 245, 0.1));
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 900px) {
+  .appointment-media {
+    min-height: 240px;
+  }
+}
+
+/* Blog */
+.blog {
+  background: var(--surface);
+}
+
+.blog-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.blog-card {
+  border-radius: var(--r-lg);
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.blog-media {
+  height: 160px;
+  background: linear-gradient(135deg, rgba(47, 125, 245, 0.14), rgba(15, 23, 42, 0.04));
+}
+
+.blog-body {
+  padding: 14px 14px 16px;
+}
+
+.blog-body p {
+  margin: 8px 0 10px;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fff;
+}
+
+.testimonial-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.testimonial-card {
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  padding: 18px;
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.82);
+}
+
+.testimonial-person {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(47, 125, 245, 0.18), rgba(15, 23, 42, 0.06));
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.testimonial-person span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact + Hours */
+.contact {
+  background: var(--surface);
+}
+
+.contact-list p {
+  margin: 10px 0 0;
+  color: rgba(15, 23, 42, 0.82);
+}
+
+.hours-card {
+  border-radius: var(--r-lg);
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: var(--shadow-md);
+  padding: 18px;
+}
+
+.hours-card h3 {
+  margin-bottom: 12px;
+}
+
+.hours-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.hours-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 80px;
+  background: #0b1b2a;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 56px 0 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footer-brand p {
+  margin: 0 0 18px;
+  max-width: 46ch;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.footer-col h4 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.78);
+  padding: 6px 0;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Footer logo (big) */
+.footer-logo--big {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 100px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.footer-logo--big img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
