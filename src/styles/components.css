@@ -7,17 +7,18 @@
 
 .topbar {
   background: #2596BE;
-  color: rgba(255, 255, 255, 0.92);
+  color: #fff;
+  font-size: 14px;
 }
 
 .topbar-inner {
- height: 45px; /* 44 yerine daha sıkı */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
 }
-
 .topbar-left {
   display: flex;
     align-items: center;
@@ -26,14 +27,37 @@
 
     white-space: nowrap;
 }
+.topbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+.topbar-label {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
 .topbar-item {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.95;
+}
+.topbar-item i,
+.topbar-label i {
+  font-size: 12px;
+  opacity: 0.85;
+}
+.divider {
+  opacity: 0.4;
 }
 
 .topbar-item:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 
 .topbar-right {
@@ -41,14 +65,18 @@
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .topbar-contact {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+}
+
 
 /* ==============================
    TOPBAR - Sosyal ikonlar
    ============================== */
 
-/* ==============================
-   TOPBAR - Sosyal ikonlar (fix: hover birleşme yok)
-   ============================== */
 
 .topbar-social {
   display: inline-flex;
@@ -304,6 +332,7 @@ h3 {
 -------------------------------- */
 
 .appointment-form {
+    height: 100%;
   margin-top: 18px;
   display: grid;
   gap: 12px;
