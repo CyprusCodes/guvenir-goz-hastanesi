@@ -15,11 +15,46 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-chrome-192x192.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/android-chrome-512x512.png" />
+
   <meta name="theme-color" content="#1f5fbf" />
 </head>
 
 <body>
   <main id="app">
+        <!-- TOP BAR -->
+        <div class="topbar">
+          <div class="container topbar-inner">
+            <div class="topbar-left">
+              <a href="tel:+90xxxxxxxxx" class="topbar-item">Tel: +90 xxxxxxxx</a>
+              <a href="mailto:info@ornek.com" class="topbar-item">info@ornek.com</a>
+              <span class="topbar-item">Adres: (adres buraya)</span>
+            </div>
+
+            <div class="topbar-right" aria-label="sosyal bağlantılar">
+
+<!-- TOPBAR: Sosyal Medya -->
+<div class="topbar-social" aria-label="sosyal medya linkleri">
+  <a class="social-btn" href="https://facebook.com/..." target="_blank" rel="noopener" aria-label="Facebook">
+    <!-- facebook icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.3-1.5 1.6-1.5h1.6V5c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8V11H6.5v3h2.7v8h4.3z" />
+    </svg>
+  </a>
+
+  <a class="social-btn" href="https://instagram.com/..." target="_blank" rel="noopener" aria-label="Instagram">
+    <!-- instagram icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2zM17.7 6.6a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z" />
+    </svg>
+  </a>
+</div>
+
+            </div>
+          </div>
+        </div>
+
     <!-- Header -->
     <header class="site-header">
       <div class="container">
@@ -28,6 +63,8 @@
         </a>
 
         <nav class="main-nav" aria-label="ana menü">
+          <nav class="main-nav" aria-label="ana menü">
+          <a href="#about">Hakkımızda</a>
           <a href="#services">Tıbbi birimler</a>
           <a href="#why">Neden Biz?</a>
           <a href="#doctors">Doktorlarımız</a>
@@ -36,93 +73,127 @@
           <a href="#contact">İletişim</a>
         </nav>
 
-        <div class="header-cta">
-          <a href="tel:+90xxxxxxxxx">+90 xxxxxxxx</a>
-        </div>
+
       </div>
     </header>
 
-    <!-- Hero -->
-    <section id="top" class="hero">
-      <div class="container">
-        <p class="eyebrow">Güvenir Göz Hastanesi</p>
+        <!-- HERO -->
+        <section id="top" class="hero">
+          <div class="container hero-grid">
+            <!-- HERO LEFT -->
+            <div class="hero-content">
+              <p class="eyebrow">Güvenir Göz Hastanesi</p>
 
-        <h1>Göz Sağlığınız için Modern ve Güvenilir Çözümler</h1>
+              <h1>Göz sağlığınız için modern ve güvenilir çözümler</h1>
 
-        <p class="section-intro">
-          Uzman kadro, güncel teknoloji ve kişiye özel yaklaşım ile muayeneden tedaviye tüm süreçlerde yanınızdayız.
-        </p>
+              <p class="section-intro">
+                Uzman kadro, güncel teknoloji ve kişiye özel yaklaşım ile muayeneden tedaviye tüm süreçlerde yanınızdayız.
+              </p>
 
-        <div class="hero-actions">
-          <a class="btn" href="#appointment">Randevu al</a>
-          <a class="btn secondary" href="#contact">İletişime geç</a>
-        </div>
+              <div class="hero-actions">
+                <a class="btn" href="#appointment">Randevu al</a>
+                <a class="btn secondary" href="#contact">İletişime geç</a>
+              </div>
+            </div>
 
-        <!-- Media (görselleri sonra ekleyeceğiz) -->
-        <div class="hero-media" aria-hidden="true"></div>
-      </div>
-    </section>
+            <!-- HERO RIGHT (Collage) -->
+            <div class="hero-collage" aria-label="klinikten görseller">
+              <!-- üst küçük -->
+              <div class="hero-tile hero-tile--top" aria-hidden="true"></div>
+
+              <!-- orta küçük (play butonlu) -->
+              <button class="hero-tile hero-tile--mid hero-play" type="button" aria-label="tanıtım videosunu oynat">
+              </button>
+
+              <!-- sağ büyük -->
+              <div class="hero-tile hero-tile--right" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+          <div class="container">
+            <div class="two-col">
+              <div class="about-media" aria-hidden="true"></div>
+
+              <div>
+                <p class="eyebrow">Hakkımızda</p>
+                <h2>Güvenir Göz ile daha net bir bakış</h2>
+                <p class="section-intro">
+                  Modern teknolojiler ve uzman kadromuzla tanıdan tedaviye güvenli bir süreç sunuyoruz.
+                  (Bu metni kurumdan gelecek içerikle netleştireceğiz.)
+                </p>
+
+                <ul class="checklist">
+                  <li>Güncel cihazlar ve bilimsel yaklaşım</li>
+                  <li>Kişiye özel değerlendirme ve takip</li>
+                  <li>Şeffaf iletişim, planlı tedavi süreci</li>
+                </ul>
+
+                <div class="about-actions">
+                  <a class="btn" href="#appointment">Randevu Al</a>
+                  <a class="btn secondary" href="#why">Neden Biz?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
     <!-- Services -->
     <section id="services" class="services">
       <div class="container">
-        <h2>Tıbbi Birimler ve Hizmetler</h2>
-        <p class="section-intro">
-          Tanı, takip ve tedavide kapsamlı yaklaşım. (aşağıdaki hizmetler fotoğraflarla desteklenecek.)
-        </p>
+        <div class="section-head">
+          <p class="section-kicker">Tıbbi birimler</p>
+          <h2 class="section-title">Hizmetlerimiz</h2>
+          <p class="section-subtitle">
+            Tanı ve tedavi süreçlerinde modern teknoloji ve uzman yaklaşım.
+          </p>
+        </div>
 
-        <div class="service-grid">
+        <!-- SERVICES GRID -->
+        <div class="services-grid">
+          <!-- 1 -->
           <article class="service-card">
-            <div class="service-media" aria-hidden="true"></div>
-            <div class="service-body">
-              <h3>Genel Göz Muayenesi</h3>
-              <p>Detaylı değerlendirme, düzenli kontrol ve yönlendirme.</p>
-            </div>
+            <h3>Genel Göz Muayenesi</h3>
+            <p>Detaylı değerlendirme, düzenli kontrol ve yönlendirme.</p>
           </article>
 
+          <!-- 2 -->
           <article class="service-card">
-            <div class="service-media" aria-hidden="true"></div>
-            <div class="service-body">
-              <h3>Katarakt</h3>
-              <p>Tanı ve cerrahi süreçlerde güvenli planlama ve takip.</p>
-            </div>
+            <h3>Katarakt</h3>
+            <p>Tanı ve cerrahi süreçlerde güvenli planlama ve takip.</p>
           </article>
 
+          <!-- 3 -->
           <article class="service-card">
-            <div class="service-media" aria-hidden="true"></div>
-            <div class="service-body">
-              <h3>Glokom</h3>
-              <p>Erken tanı ve kişiye özel tedavi planları ile kontrol.</p>
-            </div>
+            <h3>Glokom</h3>
+            <p>Erken tanı ve kişiye özel tedavi planları ile kontrol.</p>
           </article>
 
+          <!-- 4 -->
           <article class="service-card">
-            <div class="service-media" aria-hidden="true"></div>
-            <div class="service-body">
-              <h3>Retina</h3>
-              <p>Retina hastalıklarında ileri tanı yöntemleri ve izlem.</p>
-            </div>
+            <h3>Retina</h3>
+            <p>Retina hastalıklarında ileri tanı yöntemleri ve izlem.</p>
           </article>
 
+          <!-- 5 -->
           <article class="service-card">
-            <div class="service-media" aria-hidden="true"></div>
-            <div class="service-body">
-              <h3>Excimer Lazer</h3>
-              <p>Gözlük ve lens bağımlılığını azaltmaya yönelik kişiye özel lazer değerlendirmesi.</p>
-            </div>
+            <h3>Excimer Lazer</h3>
+            <p>Gözlük ve lens bağımlılığını azaltmaya yönelik lazer değerlendirmesi.</p>
           </article>
 
+          <!-- 6 -->
           <article class="service-card">
-            <div class="service-media" aria-hidden="true"></div>
-            <div class="service-body">
-              <h3>Çocuk Göz Sağlığı &amp; Şaşılık</h3>
-              <p>Çocuklarda erken muayene, takip ve şaşılık–göz tembelliği yönetimi.</p>
-            </div>
+            <h3>Çocuk Göz Sağlığı &amp; Şaşılık</h3>
+            <p>Çocuklarda erken muayene, takip ve şaşılık yönetimi.</p>
           </article>
-
         </div>
       </div>
     </section>
+
 
     <!-- Why + Stats -->
     <section id="why" class="why">
@@ -168,40 +239,27 @@
         <h2>Uzman Kadromuz</h2>
         <p class="section-intro">(doktor listesi kurumdan gelen gerçek isimler ve branşlarla güncellenecek.)</p>
 
-        <div class="doctor-grid">
-          <article class="doctor-card">
-            <div class="doctor-photo" aria-hidden="true"></div>
-            <div class="doctor-body">
-              <h3>dr. ad soyad</h3>
-              <p>göz hastalıkları uzmanı</p>
-            </div>
-          </article>
+      <div class="doctor-single">
+        <div class="doctor-single__photo" aria-hidden="true"></div>
 
-          <article class="doctor-card">
-            <div class="doctor-photo" aria-hidden="true"></div>
-            <div class="doctor-body">
-              <h3>dr. ad soyad</h3>
-              <p>göz hastalıkları uzmanı</p>
-            </div>
-          </article>
+        <div class="doctor-single__content">
+          <h3>Dr. Ad Soyad</h3>
+          <p class="doctor-single__title">Göz Hastalıkları Uzmanı</p>
 
-          <article class="doctor-card">
-            <div class="doctor-photo" aria-hidden="true"></div>
-            <div class="doctor-body">
-              <h3>dr. ad soyad</h3>
-              <p>göz hastalıkları uzmanı</p>
-            </div>
-          </article>
+          <p class="section-intro">
+            Buraya doktor hakkında kısa bio yazacağız. (uzmanlık alanları, ilgi alanları vs.)
+          </p>
 
-          <article class="doctor-card">
-            <div class="doctor-photo" aria-hidden="true"></div>
-            <div class="doctor-body">
-              <h3>dr. ad soyad</h3>
-              <p>göz hastalıkları uzmanı</p>
-            </div>
-          </article>
+          <ul class="doctor-single__meta">
+            <li><strong>Uzmanlık:</strong> Retina, Katarakt</li>
+            <li><strong>Deneyim:</strong> 10+ yıl</li>
+            <li><strong>Çalışma:</strong> Pazartesi - Cuma</li>
+          </ul>
+
+          <a class="btn" href="#appointment">Randevu al</a>
         </div>
       </div>
+
     </section>
 
     <!-- Gallery -->
@@ -211,14 +269,17 @@
         <h2>Fotoğraf Galerisi</h2>
 
         <div class="gallery-grid" aria-label="fotoğraf galerisi">
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
-          <div class="gallery-item" aria-hidden="true"></div>
+
+          <div class="gallery-item gallery-item--1" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--2" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--3" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--4" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--5" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--6" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--7" aria-hidden="true"></div>
+          <div class="gallery-item gallery-item--8" aria-hidden="true"></div>
+        </div>
+
         </div>
       </div>
     </section>
@@ -380,39 +441,63 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a class="footer-logo footer-logo--big" href="#top" aria-label="güvenir göz ana sayfa">
-            <img src="/images/logo.png" alt="güvenir göz hastanesi logosu" />
-          </a>
+            <div class="container footer-grid footer-grid--4">
+              <!-- CONTACT -->
+              <div class="footer-col">
+                <a class="footer-logo footer-logo--big" href="#top" aria-label="güvenir göz ana sayfa">
+                  <img src="/images/logo.png" alt="güvenir göz hastanesi logosu" />
+                </a>
 
-          <p>Göz sağlığında güncel teknoloji, deneyimli ekip ve güven odaklı yaklaşım.</p>
+                <p class="footer-text">
+                  Göz sağlığında güncel teknoloji, deneyimli ekip ve güven odaklı yaklaşım.
+                </p>
 
-          <ul class="footer-contact">
-            <li><strong>Telefon:</strong> +90 xxxxxxxx</li>
-            <li><strong>E-posta:</strong> info@ornek.com</li>
-            <li><strong>Adres:</strong> (adres buraya)</li>
-          </ul>
-        </div>
+                <ul class="footer-contact">
+                  <li><strong>Tel:</strong> <a href="tel:+90xxxxxxxxx">+90 xxxxxxxx</a></li>
+                  <li><strong>E-posta:</strong> <a href="mailto:info@ornek.com">info@ornek.com</a></li>
+                  <li><strong>Adres:</strong> (adres buraya)</li>
+                </ul>
+              </div>
 
-        <div class="footer-col">
-          <h4>Hizmetler</h4>
-          <a href="#services">Tıbbi Birimler</a>
-          <a href="#appointment">Randevu</a>
-          <a href="#gallery">Fotoğraf Galerisi</a>
-        </div>
+              <!-- QUICK LINKS -->
+              <div class="footer-col">
+                <h4>Hızlı Linkler</h4>
+                <a href="#about">Hakkımızda</a>
+                <a href="#blog">Blog</a>
+                <a href="#appointment">Randevu</a>
+                <a href="#contact">İletişim</a>
+              </div>
 
-        <div class="footer-col">
-          <h4>Kurumsal</h4>
-          <a href="#why">Neden Biz?</a>
-          <a href="#doctors">Doktorlarımız</a>
-          <a href="#contact">İletişim</a>
-        </div>
-      </div>
+              <!-- SERVICES -->
+              <div class="footer-col">
+                <h4>Hizmetler</h4>
+                <a href="#services">Tıbbi Birimler</a>
+                <a href="#services">Excimer Laser</a>
+                <a href="#services">Çocuk Göz Sağlığı &amp; Şaşılık</a>
+                <a href="#services">Katarakt</a>
+              </div>
 
-      <div class="container footer-bottom">
-        <small>© <span id="year"></span> Güvenir Göz Hastanesi. Tüm hakları saklıdır.</small>
-      </div>
+              <!-- FEEDBACK -->
+              <div class="footer-col">
+                <h4>İletişim Formu</h4>
+
+                <form class="footer-form" action="#" method="post">
+                  <label class="sr-only" for="ff-name">Ad Soyad</label>
+                  <input id="ff-name" name="name" type="text" placeholder="Ad Soyad" required />
+
+                  <label class="sr-only" for="ff-phone">Telefon</label>
+                  <input id="ff-phone" name="phone" type="tel" placeholder="Telefon" required />
+
+                  <label class="sr-only" for="ff-msg">Mesaj</label>
+                  <textarea id="ff-msg" name="message" rows="3" placeholder="Mesaj"></textarea>
+
+                  <button class="btn" type="submit">Gönder</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Güvenir Göz Hastanesi. Tüm hakları saklıdır.</p>
+            </div>
     </footer>
   </main>
 
